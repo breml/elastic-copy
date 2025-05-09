@@ -24,8 +24,6 @@ func (c *Client) Read(process engine.ProcessQuery, writer engine.Target, progres
 		query         = process.ReadQuery
 	)
 
-	log.Info(strings.NewReader(query.Query))
-
 	for {
 		batchNum++
 
